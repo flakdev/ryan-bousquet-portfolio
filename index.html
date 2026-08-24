@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ryan Bousquet — Game Designer</title>
+<meta name="description" content="Systems, economy, and live-ops design portfolio — Ryan Bousquet, Game Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <div class="name"><span class="dot"></span>Ryan Bousquet</div>
+    <nav>
+      <a href="#clans-codex">01_SYSTEMS</a>
+      <a href="#voyages">02_VOYAGES</a>
+      <a href="#content-design">03_CONTENT</a>
+      <a href="#live-ops">04_LIVEOPS</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Game Designer — Systems &amp; Live-Ops</div>
+    <h1>Reusable systems, live economies, and content that has to earn a fan base's trust.</h1>
+    <p class="lede">
+      Four case studies from 8+ shipped titles: a live-ops progression framework
+      reused (and reskinned) across separate games, a passive-play system built
+      end-to-end, content design work spanning two very different IPs, and a
+      career-long thread of weekly live-ops events.
+    </p>
+    <div class="meta">
+      <span>Woodstock, CT</span>
+      <span>&middot;</span>
+      <span><a href="mailto:r.bousquet2024@yahoo.com">Email</a></span>
+      <span>&middot;</span>
+      <span><a href="https://www.linkedin.com/in/rbousquet/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY 1: Clans & Codex -->
+<section class="case" id="clans-codex">
+  <div class="wrap">
+    <div class="kicker">Case Study 1 — Gamefam</div>
+    <h2>Reusable Live-Ops Systems — Clans &amp; Codex/Collection</h2>
+    <div class="subhead">Game Designer II &middot; 8+ title Roblox/UEFN portfolio</div>
+
+    <div class="grid-2">
+      <div class="block">
+        <h3>The Problem</h3>
+        <p>
+          Gamefam runs a large portfolio of live-service titles simultaneously,
+          each with small dev/art teams and heavy metrics targets. Building a
+          bespoke engagement system for every title from scratch doesn't scale —
+          the studio needed systems designed once, with reusability built in
+          from the start, that could adapt across very different games without
+          a full redesign each time.
+        </p>
+      </div>
+      <div class="block">
+        <h3>My Approach</h3>
+        <p>
+          I designed a set of core live-ops systems as reusable frameworks
+          rather than one-off features — specifying the mechanics, economy, and
+          configuration surface so each system could be re-skinned and
+          rebalanced for a new title by adjusting values rather than rebuilding
+          logic.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="block">
+        <h3>Clans</h3>
+        <p>
+          Individual and collaborative progression built around social
+          competition: members contribute toward shared goals, unlock group
+          rewards, and compete against other clans — giving players both a
+          personal progression track and a reason to coordinate with others.
+        </p>
+      </div>
+      <div class="block">
+        <h3>Codex / Collection</h3>
+        <p>
+          A persistent collection-and-completion system for long-running games
+          with deep content catalogs. Gives collector-minded players a reason
+          to keep engaging with older content, adding a second progression axis
+          alongside core gameplay.
+        </p>
+      </div>
+    </div>
+
+    <figure class="diagram-figure">
+      <svg viewBox="0 0 980 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clans and Codex system flow: a player joins a clan, contributes to a shared goal, unlocks a reward once the threshold is met, and competes against other clans, which feeds back into further contribution.">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#5b6675"/>
+          </marker>
+        </defs>
+        <text x="490" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#e7ecf2">Clans / Codex — reusable progression framework</text>
+        <rect x="20" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="95" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Join</text>
+        <text x="95" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">player joins a clan</text>
+        <line x1="170" y1="165" x2="222" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="196" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">contributes</text>
+        <rect x="222" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="297" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Contribute</text>
+        <text x="297" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">toward shared goal</text>
+        <line x1="372" y1="165" x2="424" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="398" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">threshold met</text>
+        <rect x="424" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#8f8bf0" stroke-width="1.5"/>
+        <text x="499" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Unlock reward</text>
+        <text x="499" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">group reward granted</text>
+        <line x1="574" y1="165" x2="626" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="600" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">ranked</text>
+        <rect x="626" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="701" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Compete</text>
+        <text x="701" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">vs. other clans</text>
+        <path d="M 701 200 L 701 245 L 297 245 L 297 200" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="499" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">new cycle / new goal</text>
+        <text x="95" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675" font-style="italic">personal track</text>
+        <text x="701" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675" font-style="italic">social/competitive layer</text>
+        <line x1="20" y1="300" x2="960" y2="300" stroke="#1f2733" stroke-width="1"/>
+        <text x="20" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">Same mechanics and economy, reskinned per title —</text>
+        <text x="330" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clans" (Military Tycoon)</text>
+        <text x="490" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
+        <text x="505" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clubs" (Sonic Speed Simulator)</text>
+        <text x="720" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
+        <text x="735" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Codex" (CDT, SSS)</text>
+      </svg>
+      <figcaption>The reusable Clans/Codex loop — the same framework, reskinned per title.</figcaption>
+    </figure>
+
+    <div class="block">
+      <h3>Outcome — Shipped Across the Portfolio</h3>
+      <p>
+        The same underlying framework shipped under different names depending on
+        the title's tone and audience — the clearest proof the reusable-system
+        approach actually worked:
+      </p>
+      <table class="ship-table">
+        <thead><tr><th>System</th><th>Title</th><th>Shipped As</th></tr></thead>
+        <tbody>
+          <tr><td>Clans</td><td>Sonic Speed Simulator</td><td>"Clubs"</td></tr>
+          <tr><td>Clans</td><td>Military Tycoon</td><td>"Clans"</td></tr>
+          <tr><td>Codex/Collection</td><td>Car Dealership Tycoon</td><td>"Codex"</td></tr>
+          <tr><td>Codex/Collection</td><td>Sonic Speed Simulator</td><td>"Codex"</td></tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <strong>Same collaborative-progression framework</strong> shipped as
+        "Clubs" in Sonic Speed Simulator and "Clans" in Military Tycoon — same
+        underlying mechanics and economy, reskinned and adapted to fit each
+        game's tone &amp; content needs.
+      </div>
+    </div>
+
+    <div class="gallery-group">
+      <h4>"Clans" — Military Tycoon</h4>
+      <div class="gallery">
+        <button data-full="assets/clans-codex/mt-clans-1.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-1-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+        <button data-full="assets/clans-codex/mt-clans-2.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-2-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+        <button data-full="assets/clans-codex/mt-clans-3.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-3-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+        <button data-full="assets/clans-codex/mt-clans-4.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-4-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+      </div>
+    </div>
+    <div class="gallery-group">
+      <h4>"Clubs" — Sonic Speed Simulator</h4>
+      <div class="gallery">
+        <button data-full="assets/clans-codex/sss-clubs-1.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-1-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+        <button data-full="assets/clans-codex/sss-clubs-2.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-2-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+        <button data-full="assets/clans-codex/sss-clubs-3.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-3-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+      </div>
+    </div>
+    <div class="gallery-group">
+      <h4>"Codex" — Car Dealership Tycoon &amp; Sonic Speed Simulator</h4>
+      <div class="gallery">
+        <button data-full="assets/clans-codex/cdt-codex-1.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-1-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+        <button data-full="assets/clans-codex/cdt-codex-2.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-2-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+        <button data-full="assets/clans-codex/cdt-codex-3.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-3-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+        <button data-full="assets/clans-codex/sss-codex-1.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-1-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
+        <button data-full="assets/clans-codex/sss-codex-2.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-2-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY 2: Voyages -->
+<section class="case" id="voyages">
+  <div class="wrap">
+    <div class="kicker">Case Study 2 — Disruptor Beam / Wicked Realm Games</div>
+    <h2>Voyages — Passive Exploration System</h2>
+    <div class="subhead">Star Trek: Timelines</div>
+
+    <div class="grid-2">
+      <div class="block">
+        <h3>The Problem</h3>
+        <p>
+          Star Trek: Timelines needed a new core system to deepen engagement
+          beyond its existing gacha/event loop — something players could return
+          to passively between active sessions, without requiring constant
+          attention.
+        </p>
+      </div>
+      <div class="block">
+        <h3>My Approach</h3>
+        <p>
+          I led full end-to-end design of "Voyages," loosely inspired by the
+          passive exploration mechanics of Fallout Shelter, adapted to fit an
+          existing live economy and an IP where narrative and crew identity
+          mattered as much as the mechanics.
+        </p>
+      </div>
+    </div>
+
+    <figure class="diagram-figure">
+      <svg viewBox="0 0 780 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Voyages passive-play loop: a player selects crew, sends them on an away mission, resolves dilemmas along the way, collects rewards on return, and re-engages by launching a new voyage.">
+        <defs>
+          <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#5b6675"/>
+          </marker>
+        </defs>
+        <text x="390" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#e7ecf2">Voyages — passive exploration loop</text>
+        <text x="390" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11.5" fill="#5b6675">designed to progress between active play sessions</text>
+        <rect x="300" y="90" width="180" height="72" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="390" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Crew selection</text>
+        <text x="390" y="139" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">player picks an away team</text>
+        <rect x="560" y="270" width="180" height="72" rx="8" fill="#10151b" stroke="#8f8bf0" stroke-width="1.5"/>
+        <text x="650" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Away mission</text>
+        <text x="650" y="319" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">dilemmas resolve over time</text>
+        <rect x="300" y="450" width="180" height="72" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="390" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Reward</text>
+        <text x="390" y="499" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">log &amp; rewards on return</text>
+        <rect x="40" y="270" width="180" height="72" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+        <text x="130" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Re-engagement</text>
+        <text x="130" y="319" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">player checks back in</text>
+        <path d="M 480 145 C 570 160, 640 210, 650 270" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow2)"/>
+        <text x="590" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">launch</text>
+        <path d="M 620 342 C 560 400, 470 440, 420 450" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow2)"/>
+        <text x="560" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">complete</text>
+        <path d="M 300 480 C 220 460, 150 400, 140 342" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow2)"/>
+        <text x="180" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">collect</text>
+        <path d="M 160 270 C 190 210, 250 165, 300 145" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow2)"/>
+        <text x="200" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">next voyage</text>
+        <line x1="20" y1="565" x2="760" y2="565" stroke="#1f2733" stroke-width="1"/>
+        <text x="390" y="590" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">Loosely inspired by Fallout Shelter's exploration mechanic, adapted to Star Trek: Timelines' existing economy and crew/IP identity.</text>
+      </svg>
+      <figcaption>The Voyages passive-play loop, end to end.</figcaption>
+    </figure>
+
+    <div class="grid-2">
+      <div class="block">
+        <h3>Process</h3>
+        <ol class="process">
+          <li>Initial proposal and system design</li>
+          <li>Economy and reward-curve modeling</li>
+          <li>Cross-functional work with engineering, art, and UI/UX to implement</li>
+          <li>Analytics instrumentation to track performance post-launch</li>
+          <li>Iterative tuning based on live data after release</li>
+        </ol>
+      </div>
+      <div class="block">
+        <h3>Outcome</h3>
+        <p>
+          Voyages became one of the game's most popular features, giving players
+          a passive progression path that complemented the existing active
+          gameplay loop.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery-group">
+      <h4>Voyages — Star Trek: Timelines</h4>
+      <div class="gallery">
+        <button data-full="assets/voyages/voyages-crew-select.jpg" data-caption="Voyages — crew selection"><img src="assets/voyages/voyages-crew-select-thumb.jpg" alt="Voyages crew selection screen"></button>
+        <button data-full="assets/voyages/voyages-launch.jpg" data-caption="Voyages — launch"><img src="assets/voyages/voyages-launch-thumb.jpg" alt="Voyages launch screen"></button>
+        <button data-full="assets/voyages/voyages-beginning.jpg" data-caption="Voyages — voyage in progress"><img src="assets/voyages/voyages-beginning-thumb.jpg" alt="Voyages beginning screen"></button>
+        <button data-full="assets/voyages/voyages-dilemma.jpg" data-caption="Voyages — dilemma screen"><img src="assets/voyages/voyages-dilemma-thumb.jpg" alt="Voyages dilemma screen"></button>
+        <button data-full="assets/voyages/voyages-end-reward.jpg" data-caption="Voyages — end reward screen"><img src="assets/voyages/voyages-end-reward-thumb.jpg" alt="Voyages end reward screen"></button>
+        <button data-full="assets/voyages/voyages-rewards.jpg" data-caption="Voyages — log and rewards"><img src="assets/voyages/voyages-rewards-thumb.jpg" alt="Voyages log and rewards screen"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: Content Design -->
+<section class="case" id="content-design">
+  <div class="wrap">
+    <div class="kicker">Section 3</div>
+    <h2>Content Design — Characters, Balance &amp; IP Authenticity</h2>
+    <div class="subhead">Designing content that feels authentic to two very different IPs</div>
+
+    <div class="block">
+      <h3>Star Trek: Timelines — Character &amp; Stat Design</h3>
+      <p>
+        Over multiple years, I designed 100+ weekly event and gacha-pack
+        characters and items. My process for each:
+      </p>
+      <ol class="process">
+        <li><strong>Selection</strong> — picked which character to feature based on the needs of the content it was releasing alongside: popularity, series, personality, skill set.</li>
+        <li><strong>Look development</strong> — chose a specific episode reflecting the release's theme/style, provided reference images for outfit and pose, and defined unique "items" tied to the character or episode.</li>
+        <li><strong>Approval</strong> — sent the above to Paramount for sign-off before any implementation began.</li>
+        <li><strong>Systems design</strong> — designed stat curves, unique character skills, and equipment progressions, implemented via JSON configuration.</li>
+        <li><strong>Balance &amp; release</strong> — tested and adjusted for balance, then handed off to QA before release.</li>
+      </ol>
+    </div>
+
+    <div class="gallery-group">
+      <h4>Star Trek: Timelines — character cards</h4>
+      <div class="gallery">
+        <button data-full="assets/content/characters/stt-character-1.jpg" data-caption="Star Trek: Timelines character"><img src="assets/content/characters/stt-character-1-thumb.jpg" alt="Star Trek Timelines character card"></button>
+        <button data-full="assets/content/characters/stt-character-2.jpg" data-caption="Star Trek: Timelines character"><img src="assets/content/characters/stt-character-2-thumb.jpg" alt="Star Trek Timelines character card"></button>
+        <button data-full="assets/content/characters/stt-character-3.jpg" data-caption="Star Trek: Timelines character"><img src="assets/content/characters/stt-character-3-thumb.jpg" alt="Star Trek Timelines character card"></button>
+        <button data-full="assets/content/characters/stt-character-4.jpg" data-caption="Star Trek: Timelines character"><img src="assets/content/characters/stt-character-4-thumb.jpg" alt="Star Trek Timelines character card"></button>
+      </div>
+    </div>
+
+    <div class="block" style="margin-top:36px;">
+      <h3>Car Dealership Tycoon — Vehicle Design</h3>
+      <p>
+        Vehicle stat tiers are built primarily around top speed, with braking,
+        acceleration, and shifting time as secondary stats. Values are
+        calibrated as closely as possible to the real-world performance of the
+        licensed vehicle (or a fictionalized version of one). I owned
+        determining and implementing vehicle stats, testing for balance issues,
+        and tweaking values as needed to serve the game.
+      </p>
+      <div class="callout">
+        <strong>The core design tension:</strong> balancing brand/executive-level
+        expectations that certain vehicles read as "premium" or "best in class"
+        against what the game actually needed for balance and player experience
+        — realism and brand positioning pulling one way, game balance pulling
+        the other.
+      </div>
+    </div>
+
+    <div class="gallery-group">
+      <h4>Car Dealership Tycoon — vehicles</h4>
+      <div class="gallery">
+        <button data-full="assets/content/cars/cdt-car-1.jpg" data-caption="Car Dealership Tycoon vehicle"><img src="assets/content/cars/cdt-car-1-thumb.jpg" alt="Car Dealership Tycoon vehicle"></button>
+        <button data-full="assets/content/cars/cdt-car-2.jpg" data-caption="Car Dealership Tycoon vehicle"><img src="assets/content/cars/cdt-car-2-thumb.jpg" alt="Car Dealership Tycoon vehicle"></button>
+        <button data-full="assets/content/cars/cdt-car-3.jpg" data-caption="Car Dealership Tycoon vehicle"><img src="assets/content/cars/cdt-car-3-thumb.jpg" alt="Car Dealership Tycoon vehicle"></button>
+        <button data-full="assets/content/cars/cdt-car-4.jpg" data-caption="Car Dealership Tycoon vehicle"><img src="assets/content/cars/cdt-car-4-thumb.jpg" alt="Car Dealership Tycoon vehicle"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: Live-Ops Events -->
+<section class="case" id="live-ops">
+  <div class="wrap">
+    <div class="kicker">Section 4</div>
+    <h2>Weekly Live-Ops Events — A Career-Long Throughline</h2>
+    <div class="subhead">Breadth and consistency across an entire career, not one flagship story</div>
+
+    <div class="block">
+      <p>
+        Throughout my career, one of my most consistent responsibilities has
+        been designing progression, rewards, gameplay mechanics, themes, and
+        narrative for weekly live-ops events — the steady cadence of content
+        that keeps a live game feeling alive between major releases.
+      </p>
+      <p>
+        That work has run two tracks: executing reliably against existing
+        event templates week after week, and designing new, repeatable event
+        types from scratch — expanding the toolkit of formats a project could
+        draw from and giving players greater variety from one week to the next.
+      </p>
+    </div>
+
+    <div class="gallery-group">
+      <h4>Car Dealership Tycoon</h4>
+      <div class="gallery">
+        <button data-full="assets/events/cdt-event-1.jpg" data-caption="Car Dealership Tycoon — live-ops event"><img src="assets/events/cdt-event-1-thumb.jpg" alt="Car Dealership Tycoon live-ops event"></button>
+        <button data-full="assets/events/cdt-event-2.jpg" data-caption="Car Dealership Tycoon — live-ops event"><img src="assets/events/cdt-event-2-thumb.jpg" alt="Car Dealership Tycoon live-ops event"></button>
+        <button data-full="assets/events/cdt-event-3.jpg" data-caption="Car Dealership Tycoon — live-ops event"><img src="assets/events/cdt-event-3-thumb.jpg" alt="Car Dealership Tycoon live-ops event"></button>
+      </div>
+    </div>
+    <div class="gallery-group">
+      <h4>Sonic Speed Simulator</h4>
+      <div class="gallery">
+        <button data-full="assets/events/sss-event-1.jpg" data-caption="Sonic Speed Simulator — live-ops event"><img src="assets/events/sss-event-1-thumb.jpg" alt="Sonic Speed Simulator live-ops event"></button>
+        <button data-full="assets/events/sss-event-2.jpg" data-caption="Sonic Speed Simulator — live-ops event"><img src="assets/events/sss-event-2-thumb.jpg" alt="Sonic Speed Simulator live-ops event"></button>
+        <button data-full="assets/events/sss-event-3.jpg" data-caption="Sonic Speed Simulator — live-ops event"><img src="assets/events/sss-event-3-thumb.jpg" alt="Sonic Speed Simulator live-ops event"></button>
+      </div>
+    </div>
+    <div class="gallery-group">
+      <h4>Star Trek: Timelines</h4>
+      <div class="gallery">
+        <button data-full="assets/events/stt-event-1.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-1-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
+        <button data-full="assets/events/stt-event-2.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-2-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
+        <button data-full="assets/events/stt-event-3.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-3-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
+        <button data-full="assets/events/stt-event-4.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-4-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
+        <button data-full="assets/events/stt-event-5.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-5-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Ryan Bousquet &middot; Woodstock, CT &middot; <a href="https://www.linkedin.com/in/rbousquet/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="mailto:r.bousquet2024@yahoo.com">Email</a>
+  </div>
+</footer>
+
+<div id="lightbox">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="lb-cap"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

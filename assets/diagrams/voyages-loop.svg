@@ -1,0 +1,52 @@
+<svg viewBox="0 0 780 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Voyages passive-play loop: a player selects crew, sends them on an away mission, resolves dilemmas along the way, collects rewards on return, and re-engages by launching a new voyage — a cycle designed to work between active play sessions.">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <text x="390" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0f172a">Voyages — passive exploration loop</text>
+  <text x="390" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11.5" fill="#64748b">designed to progress between active play sessions</text>
+
+  <!-- 4 nodes arranged in a diamond/cycle, connected by a circular flow -->
+  <!-- Top: Crew selection -->
+  <rect x="300" y="90" width="180" height="72" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="390" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Crew selection</text>
+  <text x="390" y="139" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">player picks an away team</text>
+
+  <!-- Right: Away mission (dilemmas) -->
+  <rect x="560" y="270" width="180" height="72" rx="8" fill="#fffbeb" stroke="#b45309" stroke-width="1.5"/>
+  <text x="650" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Away mission</text>
+  <text x="650" y="319" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">dilemmas resolve over time</text>
+
+  <!-- Bottom: Reward -->
+  <rect x="300" y="450" width="180" height="72" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="390" y="480" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Reward</text>
+  <text x="390" y="499" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">log &amp; rewards on return</text>
+
+  <!-- Left: Re-engagement -->
+  <rect x="40" y="270" width="180" height="72" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="130" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0f172a">Re-engagement</text>
+  <text x="130" y="319" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">player checks back in</text>
+
+  <!-- connecting arrows around the cycle, curved -->
+  <!-- Crew selection -> Away mission -->
+  <path d="M 480 145 C 570 160, 640 210, 650 270" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <text x="590" y="200" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">launch</text>
+
+  <!-- Away mission -> Reward -->
+  <path d="M 620 342 C 560 400, 470 440, 420 450" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <text x="560" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">complete</text>
+
+  <!-- Reward -> Re-engagement -->
+  <path d="M 300 480 C 220 460, 150 400, 140 342" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <text x="180" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">collect</text>
+
+  <!-- Re-engagement -> Crew selection -->
+  <path d="M 160 270 C 190 210, 250 165, 300 145" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <text x="200" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#64748b">next voyage</text>
+
+  <!-- footer note -->
+  <line x1="20" y1="565" x2="760" y2="565" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="390" y="590" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Loosely inspired by Fallout Shelter's exploration mechanic, adapted to Star Trek: Timelines' existing economy and crew/IP identity.</text>
+</svg>
