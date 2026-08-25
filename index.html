@@ -75,117 +75,138 @@
       </div>
     </div>
 
-    <div class="grid-2">
-      <div class="block">
-        <h3>Clans</h3>
-        <p>
-          Individual and collaborative progression built around social
-          competition: members contribute toward shared goals, unlock group
-          rewards, and compete against other clans — giving players both a
-          personal progression track and a reason to coordinate with others.
-        </p>
-      </div>
-      <div class="block">
-        <h3>Codex / Collection</h3>
-        <p>
-          A persistent collection-and-completion system for long-running games
-          with deep content catalogs. Gives collector-minded players a reason
-          to keep engaging with older content, adding a second progression axis
-          alongside core gameplay.
-        </p>
-      </div>
-    </div>
+    <p style="font-size: 13.5px; color: #98a2b0; max-width: 680px; margin: -8px 0 36px;">
+      Two separate reusable systems below — <strong style="color:#e7ecf2;">Clans</strong> and
+      <strong style="color:#e7ecf2;">Codex/Collection</strong> are independent frameworks, each
+      built once and deployed across multiple titles on its own track.
+    </p>
 
-    <figure class="diagram-figure">
-      <svg viewBox="0 0 980 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clans and Codex system flow: a player joins a clan, contributes to a shared goal, unlocks a reward once the threshold is met, and competes against other clans, which feeds back into further contribution.">
-        <defs>
-          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-            <path d="M0,0 L10,5 L0,10 z" fill="#5b6675"/>
-          </marker>
-        </defs>
-        <text x="490" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#e7ecf2">Clans / Codex — reusable progression framework</text>
-        <rect x="20" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
-        <text x="95" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Join</text>
-        <text x="95" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">player joins a clan</text>
-        <line x1="170" y1="165" x2="222" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <text x="196" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">contributes</text>
-        <rect x="222" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
-        <text x="297" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Contribute</text>
-        <text x="297" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">toward shared goal</text>
-        <line x1="372" y1="165" x2="424" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <text x="398" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">threshold met</text>
-        <rect x="424" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#8f8bf0" stroke-width="1.5"/>
-        <text x="499" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Unlock reward</text>
-        <text x="499" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">group reward granted</text>
-        <line x1="574" y1="165" x2="626" y2="165" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <text x="600" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">ranked</text>
-        <rect x="626" y="130" width="150" height="70" rx="8" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
-        <text x="701" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Compete</text>
-        <text x="701" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">vs. other clans</text>
-        <path d="M 701 200 L 701 245 L 297 245 L 297 200" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <text x="499" y="262" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">new cycle / new goal</text>
-        <text x="95" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675" font-style="italic">personal track</text>
-        <text x="701" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675" font-style="italic">social/competitive layer</text>
-        <line x1="20" y1="300" x2="960" y2="300" stroke="#1f2733" stroke-width="1"/>
-        <text x="20" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">Same mechanics and economy, reskinned per title —</text>
-        <text x="330" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clans" (Military Tycoon)</text>
-        <text x="490" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
-        <text x="505" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clubs" (Sonic Speed Simulator)</text>
-        <text x="720" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
-        <text x="735" y="322" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Codex" (CDT, SSS)</text>
-      </svg>
-      <figcaption>The reusable Clans/Codex loop — the same framework, reskinned per title.</figcaption>
-    </figure>
-
-    <div class="block">
-      <h3>Outcome — Shipped Across the Portfolio</h3>
-      <p>
-        The same underlying framework shipped under different names depending on
-        the title's tone and audience — the clearest proof the reusable-system
-        approach actually worked:
+    <!-- EXAMPLE A: CLANS -->
+    <div style="margin-bottom: 56px;">
+      <div class="mono" style="font-size: 11px; letter-spacing: 0.08em; color: #98a2b0; margin-bottom: 10px;">EXAMPLE A</div>
+      <h3 style="font-size: 19px; font-weight: 600; margin: 0 0 12px;">Clans</h3>
+      <p style="font-size: 14px; color: #98a2b0; max-width: 680px; margin: 0 0 24px;">
+        Individual and collaborative progression built around social
+        competition: members contribute toward shared goals, unlock group
+        rewards, and compete against other clans — giving players both a
+        personal progression track and a reason to coordinate with others.
       </p>
-      <table class="ship-table">
-        <thead><tr><th>System</th><th>Title</th><th>Shipped As</th></tr></thead>
-        <tbody>
-          <tr><td>Clans</td><td>Sonic Speed Simulator</td><td>"Clubs"</td></tr>
-          <tr><td>Clans</td><td>Military Tycoon</td><td>"Clans"</td></tr>
-          <tr><td>Codex/Collection</td><td>Car Dealership Tycoon</td><td>"Codex"</td></tr>
-          <tr><td>Codex/Collection</td><td>Sonic Speed Simulator</td><td>"Codex"</td></tr>
-        </tbody>
-      </table>
-      <div class="callout">
-        <strong>Same collaborative-progression framework</strong> shipped as
-        "Clubs" in Sonic Speed Simulator and "Clans" in Military Tycoon — same
-        underlying mechanics and economy, reskinned and adapted to fit each
-        game's tone &amp; content needs.
+
+      <figure class="diagram-figure">
+        <svg viewBox="0 0 980 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clans system flow: a player joins a clan, contributes to a shared goal, unlocks a reward once the threshold is met, and competes against other clans, which feeds back into further contribution.">
+          <defs>
+            <marker id="arrowA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#5b6675"/>
+            </marker>
+          </defs>
+          <text x="490" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#e7ecf2">Clans — reusable progression framework</text>
+          <rect x="20" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="95" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Join</text>
+          <text x="95" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">player joins a clan</text>
+          <line x1="170" y1="105" x2="222" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowA)"/>
+          <text x="196" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">contributes</text>
+          <rect x="222" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="297" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Contribute</text>
+          <text x="297" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">toward shared goal</text>
+          <line x1="372" y1="105" x2="424" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowA)"/>
+          <text x="398" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">threshold met</text>
+          <rect x="424" y="70" width="160" height="70" rx="0" fill="#10151b" stroke="#8f8bf0" stroke-width="1.5"/>
+          <text x="504" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Unlock reward</text>
+          <text x="504" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">group reward granted</text>
+          <line x1="584" y1="105" x2="636" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowA)"/>
+          <text x="610" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">ranked</text>
+          <rect x="636" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="711" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Compete</text>
+          <text x="711" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">vs. other clans</text>
+          <path d="M 711 140 L 711 185 L 297 185 L 297 140" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowA)"/>
+          <text x="504" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">new cycle / new goal</text>
+          <line x1="20" y1="240" x2="960" y2="240" stroke="#1f2733" stroke-width="1"/>
+          <text x="20" y="262" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">Shipped as —</text>
+          <text x="130" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clans" (Military Tycoon)</text>
+          <text x="330" y="262" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
+          <text x="345" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">"Clubs" (Sonic Speed Simulator)</text>
+          <text x="20" y="286" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675" font-style="italic">Additional titles under consideration / in progress.</text>
+        </svg>
+        <figcaption>The Clans loop — one framework, reskinned per title.</figcaption>
+      </figure>
+
+      <div class="gallery-group">
+        <h4>"Clans" — Military Tycoon</h4>
+        <div class="gallery">
+          <button data-full="assets/clans-codex/mt-clans-1.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-1-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+          <button data-full="assets/clans-codex/mt-clans-2.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-2-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+          <button data-full="assets/clans-codex/mt-clans-3.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-3-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+          <button data-full="assets/clans-codex/mt-clans-4.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-4-thumb.jpg" alt="Military Tycoon Clans screen"></button>
+        </div>
+      </div>
+      <div class="gallery-group">
+        <h4>"Clubs" — Sonic Speed Simulator</h4>
+        <div class="gallery">
+          <button data-full="assets/clans-codex/sss-clubs-1.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-1-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+          <button data-full="assets/clans-codex/sss-clubs-2.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-2-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+          <button data-full="assets/clans-codex/sss-clubs-3.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-3-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
+        </div>
       </div>
     </div>
 
-    <div class="gallery-group">
-      <h4>"Clans" — Military Tycoon</h4>
-      <div class="gallery">
-        <button data-full="assets/clans-codex/mt-clans-1.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-1-thumb.jpg" alt="Military Tycoon Clans screen"></button>
-        <button data-full="assets/clans-codex/mt-clans-2.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-2-thumb.jpg" alt="Military Tycoon Clans screen"></button>
-        <button data-full="assets/clans-codex/mt-clans-3.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-3-thumb.jpg" alt="Military Tycoon Clans screen"></button>
-        <button data-full="assets/clans-codex/mt-clans-4.jpg" data-caption="Military Tycoon — Clans"><img src="assets/clans-codex/mt-clans-4-thumb.jpg" alt="Military Tycoon Clans screen"></button>
-      </div>
-    </div>
-    <div class="gallery-group">
-      <h4>"Clubs" — Sonic Speed Simulator</h4>
-      <div class="gallery">
-        <button data-full="assets/clans-codex/sss-clubs-1.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-1-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
-        <button data-full="assets/clans-codex/sss-clubs-2.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-2-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
-        <button data-full="assets/clans-codex/sss-clubs-3.jpg" data-caption="Sonic Speed Simulator — Clubs"><img src="assets/clans-codex/sss-clubs-3-thumb.jpg" alt="Sonic Speed Simulator Clubs screen"></button>
-      </div>
-    </div>
-    <div class="gallery-group">
-      <h4>"Codex" — Car Dealership Tycoon &amp; Sonic Speed Simulator</h4>
-      <div class="gallery">
-        <button data-full="assets/clans-codex/cdt-codex-1.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-1-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
-        <button data-full="assets/clans-codex/cdt-codex-2.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-2-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
-        <button data-full="assets/clans-codex/cdt-codex-3.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-3-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
-        <button data-full="assets/clans-codex/sss-codex-1.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-1-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
-        <button data-full="assets/clans-codex/sss-codex-2.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-2-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
+    <!-- EXAMPLE B: CODEX / COLLECTION -->
+    <div>
+      <div class="mono" style="font-size: 11px; letter-spacing: 0.08em; color: #98a2b0; margin-bottom: 10px;">EXAMPLE B</div>
+      <h3 style="font-size: 19px; font-weight: 600; margin: 0 0 12px;">Codex / Collection</h3>
+      <p style="font-size: 14px; color: #98a2b0; max-width: 680px; margin: 0 0 24px;">
+        A separate, persistent collection-and-completion system for long-running
+        games with deep content catalogs. Gives collector-minded players a
+        reason to keep engaging with older content, adding a second progression
+        axis alongside core gameplay — distinct from Clans, with its own loop
+        and its own deployment history.
+      </p>
+
+      <figure class="diagram-figure">
+        <svg viewBox="0 0 980 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Codex system flow: a player discovers a collectible, collects it, completes the set, and unlocks a reward, which loops back into discovering the next set.">
+          <defs>
+            <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#5b6675"/>
+            </marker>
+          </defs>
+          <text x="490" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#e7ecf2">Codex — reusable collection framework</text>
+          <rect x="20" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="95" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Discover</text>
+          <text x="95" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">new entry revealed</text>
+          <line x1="170" y1="105" x2="222" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowB)"/>
+          <text x="196" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">collects</text>
+          <rect x="222" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="297" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Collect</text>
+          <text x="297" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">via play / content</text>
+          <line x1="372" y1="105" x2="424" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowB)"/>
+          <text x="398" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">set filled</text>
+          <rect x="424" y="70" width="160" height="70" rx="0" fill="#10151b" stroke="#1f2733" stroke-width="1.5"/>
+          <text x="504" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Complete set</text>
+          <text x="504" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">collection milestone</text>
+          <line x1="584" y1="105" x2="636" y2="105" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowB)"/>
+          <text x="610" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">claimed</text>
+          <rect x="636" y="70" width="150" height="70" rx="0" fill="#10151b" stroke="#8f8bf0" stroke-width="1.5"/>
+          <text x="711" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#e7ecf2">Unlock reward</text>
+          <text x="711" y="118" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">completion reward</text>
+          <path d="M 711 140 L 711 185 L 95 185 L 95 140" fill="none" stroke="#5b6675" stroke-width="1.5" marker-end="url(#arrowB)"/>
+          <text x="404" y="202" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10.5" fill="#5b6675">next set discovered</text>
+          <line x1="20" y1="240" x2="960" y2="240" stroke="#1f2733" stroke-width="1"/>
+          <text x="20" y="262" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">Shipped as "Codex" —</text>
+          <text x="180" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">Car Dealership Tycoon</text>
+          <text x="360" y="262" font-family="system-ui, sans-serif" font-size="11" fill="#98a2b0">&middot;</text>
+          <text x="375" y="262" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#e7ecf2">Sonic Speed Simulator</text>
+        </svg>
+        <figcaption>The Codex loop — a separate framework from Clans, reskinned per title.</figcaption>
+      </figure>
+
+      <div class="gallery-group">
+        <h4>"Codex" — Car Dealership Tycoon &amp; Sonic Speed Simulator</h4>
+        <div class="gallery">
+          <button data-full="assets/clans-codex/cdt-codex-1.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-1-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+          <button data-full="assets/clans-codex/cdt-codex-2.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-2-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+          <button data-full="assets/clans-codex/cdt-codex-3.jpg" data-caption="Car Dealership Tycoon — Codex"><img src="assets/clans-codex/cdt-codex-3-thumb.jpg" alt="Car Dealership Tycoon Codex screen"></button>
+          <button data-full="assets/clans-codex/sss-codex-1.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-1-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
+          <button data-full="assets/clans-codex/sss-codex-2.jpg" data-caption="Sonic Speed Simulator — Codex"><img src="assets/clans-codex/sss-codex-2-thumb.jpg" alt="Sonic Speed Simulator Codex screen"></button>
+        </div>
       </div>
     </div>
   </div>
