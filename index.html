@@ -20,6 +20,7 @@
       <a href="#voyages">02_VOYAGES</a>
       <a href="#content-design">03_CONTENT</a>
       <a href="#live-ops">04_LIVEOPS</a>
+      <a href="#ai-workflow">05_AI-WORKFLOW</a>
     </nav>
   </div>
 </header>
@@ -29,10 +30,11 @@
     <div class="eyebrow">Game Designer — Systems &amp; Live-Ops</div>
     <h1>Reusable systems, live economies, and content that has to earn a fan base's trust.</h1>
     <p class="lede">
-      Four case studies from 8+ shipped titles: a live-ops progression framework
-      reused (and reskinned) across separate games, a passive-play system built
-      end-to-end, content design work spanning two very different IPs, and a
-      career-long thread of weekly live-ops events.
+      Five case studies from 8+ shipped titles: reusable live-ops progression
+      frameworks reskinned across separate games, a passive-play system built
+      end-to-end, content design work spanning two very different IPs, a
+      career-long thread of weekly live-ops events, and how AI tools show up
+      in the day-to-day design process itself.
     </p>
     <div class="meta">
       <span>Woodstock, CT</span>
@@ -421,6 +423,77 @@
         <button data-full="assets/events/stt-event-5.jpg" data-caption="Star Trek: Timelines — live-ops event"><img src="assets/events/stt-event-5-thumb.jpg" alt="Star Trek Timelines live-ops event"></button>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SECTION 5: AI-Native Design Workflow -->
+<section class="case" id="ai-workflow">
+  <div class="wrap">
+    <div class="kicker">Section 5</div>
+    <h2>AI-Native Design Workflow</h2>
+    <div class="subhead">How AI tools actually show up in the day-to-day process</div>
+
+    <div class="block">
+      <p>
+        AI tools are part of my daily design process, not a novelty layered on
+        top of it. Two patterns show up again and again in my actual work.
+      </p>
+    </div>
+
+    <div class="grid-2">
+      <div class="block">
+        <h3>Research &amp; Synthesis Under Deadline Pressure</h3>
+        <p>
+          When I'm brought in to diagnose an underperforming title, I use AI to
+          rapidly pull together community sentiment, current metrics and
+          trends, and economy/content analysis — work that would otherwise
+          take days I don't have. More than once, that speed mattered as much
+          as the analysis itself: stakeholders came in with strong, conflicting
+          opinions about the right fix, and the data and visuals I could
+          produce in the time available were often what actually settled the
+          direction.
+        </p>
+      </div>
+      <div class="block">
+        <h3>Rapid Prototyping for Stakeholder Buy-In</h3>
+        <p>
+          I use AI to generate interactive UI/UX mockups and other visuals that
+          would otherwise need real artist time or a lot more of my own,
+          letting me show a concept instead of just describing it — which
+          changes how fast a team can align on a direction.
+        </p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <span class="callout-tag">On my own time</span>
+      I've used AI to design and build full applications end-to-end, including
+      <a href="https://github.com/flakdev/filmtar" target="_blank" rel="noopener"><strong>Filmtár</strong></a>,
+      a self-hosted Plex collection manager with a Claude-powered natural-language
+      curation feature: describe the collection you want, and it's built from your
+      actual library, with the reasoning left available to replay later. It's a
+      full-stack app (React/TypeScript/Vite/Tailwind frontend, FastAPI/Python
+      backend, Dockerized for self-hosting), built and shipped publicly on GitHub
+      under the MIT license. The README says it plainly: built by "a game designer
+      with almost no prior coding experience" working directly with Claude Code and
+      Claude Design, every line of production code written or directly guided by
+      AI. That's the clearest, most concrete proof of the pattern this whole
+      section is about — using AI to operate meaningfully outside my core
+      discipline, not just faster inside it.
+    </div>
+
+    <div class="gallery-group">
+      <h4>Filmtár — <a href="https://github.com/flakdev/filmtar" target="_blank" rel="noopener">github.com/flakdev/filmtar</a></h4>
+      <div class="gallery">
+        <button data-full="assets/ai-workflow/filmtar-main.jpg" data-caption="Filmtár — main collection view"><img src="assets/ai-workflow/filmtar-main-thumb.jpg" alt="Filmtár main collection view"></button>
+        <button data-full="assets/ai-workflow/filmtar-claude-result.jpg" data-caption="Filmtár — Claude-powered curation result"><img src="assets/ai-workflow/filmtar-claude-result-thumb.jpg" alt="Filmtár Claude-powered curation result"></button>
+      </div>
+    </div>
+
+    <p style="font-size: 13px; color: #5b6675; max-width: 680px; margin: 18px 0 0; font-style: italic;">
+      The two on-the-job patterns above are kept intentionally abstract rather
+      than tied to specific NDA-sensitive projects or numbers.
+    </p>
   </div>
 </section>
 
